@@ -12,18 +12,6 @@ import SinglePost from "./sections/singlePost";
 import Blogs from "./sections/BlogsPage";
 import Gallery from "./sections/GalleryPage";
 
-import axios from "axios";
-
-axios.get("https://jsonplaceholder.typicode.com/posts")
-    .then(response => {
-        // handle success
-        console.log(response.data);
-    })
-    .catch(error => {
-        // handle error
-        console.error(error);
-    });
-
 const router = createBrowserRouter([
     {
         path: "/",
