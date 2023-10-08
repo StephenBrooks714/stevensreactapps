@@ -1,9 +1,13 @@
 .App {
   text-align: center;
 }
-
+nav {
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
 .App-logo {
-  height: 40vmin;
+  height: 15vmin;
   pointer-events: none;
 }
 
@@ -12,27 +16,111 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.letter-space {
+  letter-spacing: 12px;
 }
-
+.fit {
+  height: 225px; object-fit: cover
+}
+.fit2 {
+  height: 225px; object-fit: cover; object-position: top
+}
+.bgFit {
+  margin: auto;
+  display: block;
+  width: 100%;
+  z-index: -10;
+  position: relative;
+}
+.bg {
+  background-color: rgba(255, 255, 255, 0.1)
+}
+.App-header {
+  background: url("https://directlinedev.com/media/services/service/background/background_11.wide.jpeg")
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+}
+.postBg {
+  background: url("https://plus.unsplash.com/premium_photo-1668028172814-ae27b98af5c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80")
+  no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 60vh;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+.aboutSection {
+  padding-top: 110px;
+  .rounded-t-2-5 {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  @media (min-width: 992px) {
+    .rounded-tr-lg-0 {
+      border-top-right-radius: 0;
+    }
+    .rounded-bl-lg-2-5 {
+      border-bottom-left-radius: 0.75rem;
+    }
+  }
+}
+.aboutBg {
+  color: #344e41;
+}
+.cardBg {
+  background-color: #fff9f2
+}
+.space-top {
+  margin-top: 110px;
+}
+.post-height {
+  height: 70vh;
+}
+.page-height {
+  height: 85vh;
+}
+.logoSize {
+  height: 40px;
+  width: 90px;
+}
 .App-link {
   color: #61dafb;
 }
-
+.link {
+  text-decoration: none;
+  text-underline: none;
+}
+.space {
+  height: 50vh;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+#nav1 {
+  display: flex;
+}
+#nav2 {
+  display: none;
+}
+@media(max-width: 991px){
+  #nav1 {
+    display: none;
+  }
+  #nav2 {
+    display: flex;
   }
 }
